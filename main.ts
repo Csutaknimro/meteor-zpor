@@ -1,24 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-    led.plot(0, véletlen)
-    basic.pause(100)
-    led.unplot(0, véletlen)
-    véletlen += 1
-    basic.pause(100)
-    led.plot(0, véletlen)
-    basic.pause(100)
-    led.unplot(0, véletlen)
-    basic.pause(100)
-    led.plot(0, véletlen)
-    basic.pause(100)
-    led.unplot(0, véletlen)
-    basic.pause(100)
-    led.plot(0, véletlen)
-    basic.pause(100)
-    led.unplot(0, véletlen)
-    basic.pause(100)
-    led.plot(0, véletlen)
-    basic.pause(100)
-    led.unplot(0, véletlen)
+    for (let index = 0; index < 5; index++) {
+        led.plot(0, véletlen)
+        basic.pause(500)
+        led.unplot(0, véletlen)
+        véletlen += 1
+    }
 })
 let véletlen = 0
 véletlen = 0
