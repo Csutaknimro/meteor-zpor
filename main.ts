@@ -2,6 +2,7 @@ input.onButtonPressed(Button.A, function () {
     led.plot(0, véletlen)
     basic.pause(100)
     led.unplot(0, véletlen)
+    véletlen += 1
     basic.pause(100)
     led.plot(0, véletlen)
     basic.pause(100)
